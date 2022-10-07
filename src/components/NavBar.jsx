@@ -10,13 +10,13 @@ export const NavBar = () => {
     <>
         <Navbar bg="light" expand="lg">
           <Container>
-              <Navbar.Brand style={{ color: '#0d6efd' }} href="#home"><GiWallet /> Blue Wallet</Navbar.Brand>
+              <Navbar.Brand style={{ color: '#0d6efd' }} href="/home"><GiWallet /> Blue Wallet</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                      <Nav.Link style={{  }} href="#home">Home</Nav.Link>
+                      <Nav.Link style={{  }} href="/home">Home</Nav.Link>
                       <NavDropdown title="Wallet" id="basic-nav-dropdown">
-                          <NavDropdown.Item href="#wallet">Cards</NavDropdown.Item>
+                          <NavDropdown.Item href="/wallet">Cards</NavDropdown.Item>
                       </NavDropdown>
                   </Nav>
               </Navbar.Collapse>
