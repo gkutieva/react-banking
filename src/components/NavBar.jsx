@@ -7,7 +7,7 @@ import {GiWallet} from 'react-icons/gi';
 
 export const NavBar = () => {
   return (
-    <>
+    <div>
         <Navbar bg="light" expand="lg">
           <Container>
               <Navbar.Brand style={{ color: '#0d6efd' }} href="/home"><GiWallet /> Blue Wallet</Navbar.Brand>
@@ -21,9 +21,8 @@ export const NavBar = () => {
                   </Nav>
               </Navbar.Collapse>
           </Container>
-      </Navbar>
-     
-</>
+      </Navbar>   
+</div>
   )
 }
 
