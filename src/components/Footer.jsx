@@ -23,24 +23,6 @@ export const Footer = () => {
             <div className="p-2 flex-fill"><CgInstagram /></div>
             <div className="p-2 flex-fill">< BsLinkedin /></div>
             <div className="p-2 flex-fill"><FaTwitterSquare /></div>
-            {/* <p><ImFacebook2 /></p>
-            <p><CgInstagram /></p>
-            <p>< BsLinkedin /></p>
-            <p><FaTwitterSquare /></p> */}
-            {/* <MDBIcon fab icon="facebook-f" />
-            <MDBIcon fab icon="twitter" />
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="google" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="instagram" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="linkedin" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon fab icon="github" />
-          </a> */}
         </div>
       </section>
 

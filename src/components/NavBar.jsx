@@ -16,7 +16,9 @@ export const NavBar = () => {
                   <Nav className="me-auto">
                       <Nav.Link style={{  }} href="/home">Home</Nav.Link>
                       <NavDropdown title="Wallet" id="basic-nav-dropdown">
-                          <NavDropdown.Item href="/wallet">Cards</NavDropdown.Item>
+                          <NavDropdown.Item href="/wallet">Blue Card</NavDropdown.Item>
+                          <NavDropdown.Item href="/wallet">Gold Card</NavDropdown.Item>
+                          <NavDropdown.Item href="/wallet">Black Card</NavDropdown.Item>
                       </NavDropdown>
                   </Nav>
               </Navbar.Collapse>
