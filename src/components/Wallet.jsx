@@ -7,10 +7,10 @@ import { TransactionList } from './TransactionList'
 export const Wallet = () => {
   return (
     <div>
-      <AddTransaction/>
       <Balance/>
       <Income/>
       <TransactionList/>
+      <AddTransaction/>
     </div>
   )
 }

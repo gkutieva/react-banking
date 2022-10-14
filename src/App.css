@@ -1,3 +1,11 @@
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f7f7f7;
   display: flex;
@@ -9,10 +17,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* .container {
-  margin: 10px auto;
-  width: 550px;
-} */
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
 
 h1 {
   letter-spacing: 1px;
@@ -32,6 +40,7 @@ h4 {
 
 .inc-exp-container {
   background-color: whitesmoke;
+  box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -76,11 +85,13 @@ input[type='number'] {
   width: 100%;
 }
 
-.btn {
+.btn.btn2 {
   cursor: pointer;
-  background-color: blue;
-  color: blue;
-  border: 0;
+  /* background-color: #008CBA; */
+  box-shadow: var(--box-shadow);
+  color:black;
+  border-radius: 4px;
+  border: 2px solid blue;
   display: block;
   font-size: 16px;
   margin: 10px 0 30px;
@@ -88,10 +99,10 @@ input[type='number'] {
   width: 100%;
 }
 
-/* .btn:focus,
+.btn:focus,
 .delete-btn:focus {
   outline: 0;
-} */
+}
 
 .list {
   list-style-type: none;
@@ -101,6 +112,7 @@ input[type='number'] {
 
 .list li {
   background-color: #fff;
+  box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
   justify-content: space-between;
@@ -135,9 +147,4 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
-}
-
-.container-nav {
-  display: flex;
-  align-items: stretch;
 }
