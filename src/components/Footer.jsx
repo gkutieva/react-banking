@@ -107,7 +107,7 @@ export const Footer = () => {
         className="text-center p-4"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        © 2022 Bluesky Wallet. All rights reserved
+        © 2022 Blue Wallet. All rights reserved
       </div>
     </MDBFooter>
   );
