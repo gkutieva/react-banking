@@ -6,13 +6,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { Footer } from './components/Footer';
 
 
-
-
 function App() {
   return (
     <>
       <NavBar />
-      <div>
+      <div className='header'>
       <BrowserRouter>
       <Header />
       </BrowserRouter>
