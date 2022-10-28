@@ -7,7 +7,7 @@ import gold from '../Images/gold.jpg';
 
 export const Cards = () => {
   return (
-   <div className='d-flex justify-content-evenly'>
+   <div id='card' className='d-flex justify-content-evenly'>
         <Card style={{ width: '18rem', height: '22rem', margin: '50px' }}>
     <Card.Img variant="top" src={blue} />
     <Card.Body>
