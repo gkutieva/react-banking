@@ -22,4 +22,4 @@
 
 
 ## Getting started:
-Click [here](https://transcendent-druid-31b2ef.netlify.app/home) to browse the portfolio app!
+Click [here](https://transcendent-druid-31b2ef.netlify.app) to browse the portfolio app!
