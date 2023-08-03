@@ -1,26 +1,59 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import {GiWallet} from 'react-icons/gi';
+
+const containerStyles = {
+  display:"flex",
+  alignItems: "center",
+  justifyContent: "center",
+}
+
+const linkStyles = {
+  textDecoration: "none",
+  color:'#212529',
+  paddingLeft: '1rem'
+}
+
+const navDropdownStyles = {
+  display:"block",
+  textDecoration: "none",
+  paddingLeft: '1rem',
+  color:'#212529',
+  
+}
 
 export const NavBar = () => {
   return (
     <div id='nav-bar'>
         <Navbar bg="light" expand="lg">
-          <Container className='container-nav'>
-              <Navbar.Brand style={{ color: '#0d6efd' }} href="/home"><GiWallet /> Blue Wallet</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Container style={containerStyles}>
+              <Link to="/" style={{...linkStyles, color: "#0D6DFD"}}><GiWallet /> Blue Wallet</Link>
+
               <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="me-auto">
-                      <Nav.Link style={{  }} href="/home">Home</Nav.Link>
-                      <NavDropdown title="Wallet" id="basic-nav-dropdown">
-                          <NavDropdown.Item href="/wallet">Blue Card</NavDropdown.Item>
-                          <NavDropdown.Item href="/wallet">Gold Card</NavDropdown.Item>
-                          <NavDropdown.Item href="/wallet">Black Card</NavDropdown.Item>
+                       
+                        <Link to="/" style={linkStyles}>
+                            Home
+                        </Link>
+                        
+                      <NavDropdown title="Wallet" id="basic-nav-dropdown" style={linkStyles}>
+
+                        <Link to="/wallet" style={navDropdownStyles}>
+                          Blue Card
+                        </Link>
+              
+                        <Link to="/wallet" style={navDropdownStyles}>
+                            Gold Card
+                        </Link>
+
+                        <Link to="/wallet" style={navDropdownStyles}>
+                          Black Card
+                        </Link>
+  
                       </NavDropdown>
-                  </Nav>
+  
               </Navbar.Collapse>
           </Container>
       </Navbar>   
